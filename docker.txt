@@ -14,10 +14,46 @@ OS 레발 가상화 구현을 도와주는 프로그램
 docker image ls
 도커 실행 구문
 docker run 이미지이름:태그이름 
+docker run -d 이미지이름:태그이름  //백그라운드 재생
+docker run -d -p 8082:8082 // 포트번호 실행 이걸로 추천
 
+포트 왜 설정함? 컨테이너의 포트번호와 내 포트번호와 연결 
+// 남의 컴으로는?
+//남의 컴퓨터아이피주소:포트
 
 docker build -t nodeserver:v1 .
 . 경로
 
-1, os, 환경서렂ㅇ, 코드 등 집어넣어서 image 만들수 있음
+1, os, 환경설정, 코드 등 집어넣어서 image 만들수 있음
 2. image 실행 중인 가상 컴퓨터는 container
+
+
+
+도커 이미지 리스트 가져오기
+docker image ls
+도커 실행 구문
+docker run 이미지이름:태그이름 
+docker run -d 이미지이름:태그이름  //백그라운드 재생
+docker run -d -p 8082:8082 이미지이름:태그이름  // 포트번호 실행 이걸로 추천
+
+실행중인 컨테이너 
+docker ps
+
+실행중인 컨테이너 로그 출력
+docker logs 컨테이너명
+
+실행중인 컨테이너 접속
+docker exec -it 컨테이너명 sh
+
+위에 나오려면 컨트롤 피, 컨트롤 큐
+
+
+현재 컨테이너 정지
+docker stop 컨테이너명
+
+정지중인 컨테이너를 삭제하고 싶다
+docker rm 컨테이너명
+
+
+실행중인 거 삭제하는 법
+docker rm 컨테이너명 -f
