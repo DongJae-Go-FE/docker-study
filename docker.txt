@@ -15,5 +15,9 @@ docker image ls
 도커 실행 구문
 docker run 이미지이름:태그이름 
 
+
+docker build -t nodeserver:v1 .
+. 경로
+
 1, os, 환경서렂ㅇ, 코드 등 집어넣어서 image 만들수 있음
 2. image 실행 중인 가상 컴퓨터는 container
