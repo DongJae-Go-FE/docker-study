@@ -89,3 +89,25 @@ Next.js 프로젝트도 코드를 다 짰으면 npm run build 명령어 입력�
 오늘의 결론은 
 Dockerfile 작성할 때 잡기술 넣으면 여러 장점이 있습니다.
 그리고 성능이나 최적화에 집착하면 고수처럼 보일 수 있습니다.
+
+
+
+docker image 연동
+
+docker repo 생성 후
+docker desktop에
+docker tag nodeserver:v1 masterforce999/docker:v1
+            내이미지 이름:태그네임       도커 레포 이름: 태그네임
+
+
+docker push masterforce999/docker:tagname
+
+
+내가 올린 이미지 받는 법
+docker pull 이미지명:태그
+
+
+
+여러종류의 이미지가 있으면? 
+각각 업로드 해라
+귀찮으면 다른 태그명으로 하는데 이러면 복잡함
