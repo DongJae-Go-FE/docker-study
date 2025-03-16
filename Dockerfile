@@ -41,5 +41,5 @@ CMD ["node","server.js"]
 
 
 #그리고 터미널에서
-#docker build -t 이미지이름적명:태그작명(보통버전) .
+#docker build -t 이미지이름적명:태그작명(보통버전)
 #여기서 점은 도커파일 경로
